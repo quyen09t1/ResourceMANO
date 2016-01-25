@@ -23,10 +23,3 @@ def get_token(auth_url = _auth_url, username = _os_username, password = _os_pass
 def get_client(token, url = _url, verify = False):
     ceilometer_client = client.get_client(2, ceilometer_url = url, token = token, verify = verify)
     return ceilometer_client
-
-#token = get_token()
-#print token
-
-#get_client(token = token)
-
-#print "oke"
